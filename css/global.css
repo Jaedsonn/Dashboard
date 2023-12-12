@@ -30,13 +30,6 @@ div {
     height: 80px;
 }
 
-label {
-    width: 391px;
-    height: 46px;
-    display: flex;
-    justify-content: space-between;
-}
-
 #searchConteiner {
     width: 376px;
     height: 31px;
