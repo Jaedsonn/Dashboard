@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans&display=swap');
+
+*{
+    font-family: 'Rethink Sans', sans-serif;
+}
+
+body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aqua;
+}
+
+div {
+    display: flex;
+    background-color: blueviolet;
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+}
+
+label{
+    width: 391px;
+    height: 46px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#searchConteiner{
+    width: 391px;
+    height: 46px;
+    background: #181B3A;
+}
+
+#search {
+    width: 390px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 10px;
+
+    background: #181B3A;
+    background-size: contain;
+    color: #4D5070;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    border:none;
+}
+
+#icon7days {
+    width: 146px;
+    height: 46px;
+}
+
+#modeLD {
+    width: 108px;
+    height: 46px;
+}
+
+#modeLD input {
+    width: 24px;
+    height: 24px;
+}
+
+#userNoti {
+    width: 90px;
+    height: 40px;
+}
+
+.logoNav {
+    width: 24px;
+    height: 24px;
+}

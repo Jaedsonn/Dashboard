@@ -4,30 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login page</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
 </head>
 
 <body>
-    <section id="img">
-        <img src="Online test-pana.svg" alt="IMAGEM QUE EU AINDA NÃO ESCOLHI">
-    </section>
-    <section id="dados">
-        <div id="conteiner-d">
-        <h1>Entre na sua conta:</h1>
-        <div class="dados-c">
-            <label for="email">Email:</label>
-            <input type="email" name="email" class="ask">
+    <header>
+        <img class="logoNav" src="img/svg/Bank Logo 1.svg" alt="Logo Bank" id="logo">
+
+        
+            <input class="logoNav" type="search" name="search" id="search" placeholder="search">
+            <img class="logoNav" src="img/svg/Lupa 2.svg" alt="">
+            </input>
+        
+
+
+        <div id="icon7days">
+            <img class="logoNav" src="img/svg/calendário-icon.svg" alt="Calendário">
+            7Days
+            <img class="logoNav" src="img/svg/set down.svg" alt="seta para baixo">
         </div>
-        <div class="dados-c">
-            <label for="senha">Senha:</label>
-            <input type="password" name="senha" class="ask">
+
+        <input id="modeLD">
+        <input type="button" value="light mode"><img src="img/svg/light mode.svg" alt=""></input>
+        <input type="button" value="dark mode"><img src="img/svg/dark mode.svg" alt=""></input>
         </div>
-        <button>Entrar</button>
-        <p>Não tem uma conta? <a href="login.html">faça login aqui.</a></p>
-    </div>
-    </section>
+
+        <div id="userNoti">
+            <img class="logoNav" src="img/svg/notifications.svg" alt="notifi">
+            <img class="logoNav" src="img/svg/user.svg" alt="usúario">
+        </div>
+    </header>
 </body>
 
 </html>
