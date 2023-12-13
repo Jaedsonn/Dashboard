@@ -2,6 +2,7 @@
 
 * {
     font-family: 'Rethink Sans', sans-serif;
+    box-sizing: content-box;
 }
 
 body {
@@ -9,20 +10,25 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #090D28;
 }
 
 header {
-    width: 100vw;
+    width: 1500px;
     height: 80px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: aqua;
+    background-color: #090D28;
+    padding: 0 20px;
+    
 }
 
 div {
     display: flex;
     background-color: blueviolet;
+   
 }
 
 #logo {
@@ -32,7 +38,7 @@ div {
 
 #searchConteiner {
     width: 376px;
-    height: 31px;
+    height: 16px;
     background: #181B3A;
     padding: 15px;
     display: flex;
@@ -43,7 +49,7 @@ div {
 
 #search {
     width: 360px;
-    height: 46px;
+    height: 26px;
     flex-shrink: 0;
     border-radius: 10px;
 
@@ -63,9 +69,17 @@ div {
     padding: 10px 0;
 }
 
+#configCont{
+    width: 33%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+}
+
 #icon7days {
-    width: 106px;
-    height: 36px;
+    width: 126px;
+    height: 26px;
     padding: 10px 10px;
     display: flex;
     align-items: center;
@@ -89,24 +103,69 @@ div {
 
 }
 
-#icon7days p img{
+#icon7days p img {
     margin-right: 5px;
 }
 
 
 #modeLD {
     width: 108px;
-    height: 46px;
+    height: 36px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px;
+    border: 1px solid #4D5070;
+    background: #181B3A;
+
+    flex-shrink: 0;
 }
 
 #modeLD input {
     width: 24px;
     height: 24px;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+}
+
+#light {
+    background-image: url(/img/svg/light\ mode.svg);
+}
+
+.ellipse {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4D5070;
+    border-radius: 50%;
+}
+
+#dark {
+    background-image: url("/img/svg/dark\ mode.svg");
+    background-size: contain;
+    background-position: center;
 }
 
 #userNoti {
     width: 90px;
     height: 40px;
+}
+
+#userNoti {
+    display: flex;
+    width: 90px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background-color:transparent;
 }
 
 .logoNav {
