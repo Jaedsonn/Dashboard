@@ -14,15 +14,14 @@ body {
 }
 
 header {
-    width: 1500px;
+    width: 1440px;
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: aqua;
     background-color: #090D28;
-    padding: 0 20px;
-
+    
 }
 
 div {
@@ -177,13 +176,21 @@ div {
 
 #homePage {
     display: flex;
+    width: 1500px;
+height: 1024px;
+flex-shrink: 0;
+    /*configurar  o justify content ao finalizar os elementos*/
+    gap: 30px;
+    justify-content:space-between;
+    
+
 
 }
 
 #sideBar {
     width: 80px;
     height: 844px;
-    padding: 20px 0;
+
     flex-shrink: 0;
     border-radius: 10px;
     background: #181B3A;
@@ -191,6 +198,8 @@ div {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin-top: 40px;
+   
 }
 
 #sideBar nav {
@@ -199,4 +208,89 @@ div {
     justify-content: space-between;
     align-items: center;
     gap: 30px;
+}
+
+#upIcons {
+    margin-top: 50px;
+}
+
+#homeEstatics {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    gap: 25px;
+    width: 1440px;
+    align-items: center;
+}
+
+#money {
+    display: flex;
+    width: 1228px;
+    height: 176px;
+    justify-content: center;
+    /*  align-items: flex-start;  config do figma*/
+    align-items: center;
+    gap: 48px;
+    flex-shrink: 0;
+}
+
+.din {
+    width: 271px;
+    height: 175px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: linear-gradient(92deg, #F05F22 1.5%, #E53F52 53.97%, rgba(229, 63, 82, 0.00) 146.29%);
+}
+
+#graphics {
+    display: flex;
+    width: 1228px;
+    height: 305px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 38px;
+    flex-shrink: 0;
+
+}
+
+.estatics {
+
+    width: 495px;
+    height: 305px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #181B3A;
+
+}
+
+.estatics2{
+    width: 695px;
+height: 305px;
+flex-shrink: 0;
+border-radius: 10px;
+background: #181B3A;
+}
+
+#informations {
+    display: inline-flex;
+    height: 343px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 36px;
+    flex-shrink: 0;
+}
+
+.status{
+    width: 728px;
+    height: 343px;
+border-radius: 10px;
+background: #181B3A;
+}
+
+.status2{
+    
+width: 464px;
+height: 343px;
+border-radius: 10px;
+background: #181B3A;
 }
