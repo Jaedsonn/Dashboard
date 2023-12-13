@@ -22,13 +22,13 @@ header {
     background-color: aqua;
     background-color: #090D28;
     padding: 0 20px;
-    
+
 }
 
 div {
     display: flex;
     background-color: blueviolet;
-   
+
 }
 
 #logo {
@@ -69,7 +69,7 @@ div {
     padding: 10px 0;
 }
 
-#configCont{
+#configCont {
     width: 33%;
     display: flex;
     justify-content: space-around;
@@ -132,7 +132,7 @@ div {
 }
 
 #light {
-    background-image: url("");
+    background-image: url("/img/svg/Header\ images/lightMode.svg");
 }
 
 .ellipse {
@@ -147,7 +147,7 @@ div {
 }
 
 #dark {
-    background-image: url("/img/svg/dark\ mode.svg");
+    background-image: url("/img/svg/Header\ images/darkMode.svg");
     background-size: contain;
     background-position: center;
 }
@@ -165,10 +165,38 @@ div {
     align-items: center;
     gap: 10px;
     flex-shrink: 0;
-    background-color:transparent;
+    background-color: transparent;
 }
 
 .logoNav {
     width: 24px;
     height: 24px;
+}
+
+/*Comçando a estilizar a side bar*/
+
+#homePage {
+    display: flex;
+
+}
+
+#sideBar {
+    width: 80px;
+    height: 844px;
+    padding: 20px 0;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #181B3A;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sideBar nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
 }
