@@ -25,7 +25,7 @@ main{
 
 
 header {
-    width: 1440px;
+    width: 1400px;
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -186,21 +186,15 @@ header {
     display: flex;
     width: 1500px;
     height: 1024px;
-    flex-shrink: 0;
-    /*configurar  o justify content ao finalizar os elementos*/
-   
-    justify-content: space-between;
     margin-top: 20px;
-   
-
-
-
+    align-items: flex-start;
+    justify-content: flex-end;
 }
 
 #sideBar {
     width: 80px;
     height: 884px;
-    margin-left: 30px;
+    margin-left: 50px;
     flex-shrink: 0;
     border-radius: 10px;
     background: #181B3A;
@@ -223,10 +217,13 @@ header {
     margin-top: 50px;
 }
 
+#lowIcons{
+    margin-bottom: 50px;
+}
+
 #homeEstatics {
     display: flex;
     flex-direction: column;
-    margin-right: px;
     gap: 25px;
     width: 1440px;
     align-items: center;
@@ -244,8 +241,9 @@ header {
 }
 
 .din {
-    width: 271px;
-    height: 175px;
+    width: 221px;
+    height: 155px;
+    padding: 10px 25px;
     flex-shrink: 0;
     border-radius: 10px;
     background: linear-gradient(92deg, #F05F22 1.5%, #E53F52 53.97%, rgba(229, 63, 82, 0.00) 146.29%);
@@ -302,4 +300,35 @@ header {
     height: 343px;
     border-radius: 10px;
     background: #181B3A;
+}
+
+/*estilização dos conteiners de content*/
+.din{
+    display: flex;
+    justify-content: space-between;
+}
+   
+
+
+.pay{
+    width: 30;
+    height: 30;
+}
+
+.ellipse4{
+width:40px;
+height: 40px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color:#F4F4F4 ;
+}
+
+.options{
+width: 24px;
+height: 24px;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
 }
