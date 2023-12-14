@@ -10,8 +10,19 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: #090D28;
 }
+
+main{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #090D28;
+}
+
 
 header {
     width: 1440px;
@@ -21,14 +32,9 @@ header {
     align-items: center;
     background-color: aqua;
     background-color: #090D28;
-    
-}
-
-div {
-    display: flex;
-    background-color: blueviolet;
 
 }
+
 
 #logo {
     width: 80px;
@@ -71,9 +77,11 @@ div {
 #configCont {
     width: 33%;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     background-color: transparent;
+    margin-right: 17px;
+    gap:42px;
 }
 
 #icon7days {
@@ -177,20 +185,22 @@ div {
 #homePage {
     display: flex;
     width: 1500px;
-height: 1024px;
-flex-shrink: 0;
+    height: 1024px;
+    flex-shrink: 0;
     /*configurar  o justify content ao finalizar os elementos*/
-    gap: 30px;
-    justify-content:space-between;
-    
+   
+    justify-content: space-between;
+    margin-top: 20px;
+   
+
 
 
 }
 
 #sideBar {
     width: 80px;
-    height: 844px;
-
+    height: 884px;
+    margin-left: 30px;
     flex-shrink: 0;
     border-radius: 10px;
     background: #181B3A;
@@ -198,7 +208,6 @@ flex-shrink: 0;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-top: 40px;
    
 }
 
@@ -217,7 +226,7 @@ flex-shrink: 0;
 #homeEstatics {
     display: flex;
     flex-direction: column;
-    margin-right: 30px;
+    margin-right: px;
     gap: 25px;
     width: 1440px;
     align-items: center;
@@ -263,12 +272,12 @@ flex-shrink: 0;
 
 }
 
-.estatics2{
+.estatics2 {
     width: 695px;
-height: 305px;
-flex-shrink: 0;
-border-radius: 10px;
-background: #181B3A;
+    height: 305px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #181B3A;
 }
 
 #informations {
@@ -280,17 +289,17 @@ background: #181B3A;
     flex-shrink: 0;
 }
 
-.status{
+.status {
     width: 728px;
     height: 343px;
-border-radius: 10px;
-background: #181B3A;
+    border-radius: 10px;
+    background: #181B3A;
 }
 
-.status2{
-    
-width: 464px;
-height: 343px;
-border-radius: 10px;
-background: #181B3A;
+.status2 {
+
+    width: 464px;
+    height: 343px;
+    border-radius: 10px;
+    background: #181B3A;
 }
