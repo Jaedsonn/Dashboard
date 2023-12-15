@@ -483,12 +483,14 @@ header {
     width: 619px;
     height: 46px;
     flex-shrink: 0;
+    
+    
 }
 
 .teste{
 
-    background-image: linear-gradient(180deg, rgba(255, 131, 145, 0.58) 0%, rgba(77, 80, 112, 0.00) 94.79%);
+  /*   background-image: linear-gradient(180deg, rgba(255, 131, 145, 0.58) 0%, rgba(77, 80, 112, 0.00) 94.79%);
     -webkit-background-clip:border-box;
-    background-clip: border-box;
+    background-clip: border-box; */
 
 }
