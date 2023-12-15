@@ -14,7 +14,7 @@ body {
     background-color: #090D28;
 }
 
-main{
+main {
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -80,8 +80,7 @@ header {
     justify-content: flex-start;
     align-items: center;
     background-color: transparent;
-    margin-right: 17px;
-    gap:42px;
+    gap: 42px;
 }
 
 #icon7days {
@@ -202,7 +201,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-   
+
 }
 
 #sideBar nav {
@@ -217,7 +216,7 @@ header {
     margin-top: 50px;
 }
 
-#lowIcons{
+#lowIcons {
     margin-bottom: 50px;
 }
 
@@ -267,6 +266,10 @@ header {
     flex-shrink: 0;
     border-radius: 10px;
     background: #181B3A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 
 }
 
@@ -276,6 +279,10 @@ header {
     flex-shrink: 0;
     border-radius: 10px;
     background: #181B3A;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
 }
 
 #informations {
@@ -303,32 +310,185 @@ header {
 }
 
 /*estilização dos conteiners de content*/
-.din{
+.din {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
-   
 
 
-.pay{
+
+.pay {
     width: 30;
     height: 30;
 }
 
-.ellipse4{
-width:40px;
-height: 40px;
-border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
-background-color:#F4F4F4 ;
+.ellipse4 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4F4F4;
 }
 
-.options{
-width: 24px;
-height: 24px;
-justify-content: center;
-align-items: center;
-flex-shrink: 0;
+.options {
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+/* conteúdos dos conteiners */
+
+.iconCont {
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.textCont {
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.dinCont {
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#sub-estatics {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.textGraph {
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 435px;
+    padding: 0px 10px;
+    text-align: start;
+
+}
+
+.colorGraph {
+    width: 210px;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.subGraph {
+    width: 210px;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.circle {
+    width: 105px;
+    height: 105px;
+}
+
+#levelsGraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 150px;
+}
+
+#levelsGraph p {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.colorGraph p {
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: absolute;
+}
+
+#numGroup {
+    width: 23px;
+    height: 215px;
+}
+
+.verticalNum {
+    color: #AEAFBB;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 25px;
+}
+
+#numGroup2 {
+    width: 569px;
+    height: 15px;
+    display: flex;
+    gap: 65px;
+}
+
+.horizontalNum {
+    color: #AEAFBB;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+#vetor {
+    width: 619.002px;
+    height: 167px;
+    flex-shrink: 0;
+}
+
+#group1 {
+    width: 619.002px;
+    height: 146px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    
+}
+
+#vetor img {
+    width: 619px;
+    height: 46px;
+    flex-shrink: 0;
+}
+
+.teste{
+
+    background-image: linear-gradient(180deg, rgba(255, 131, 145, 0.58) 0%, rgba(77, 80, 112, 0.00) 94.79%);
+    -webkit-background-clip:border-box;
+    background-clip: border-box;
+
 }
