@@ -295,10 +295,15 @@ header {
 }
 
 .status {
-    width: 728px;
+    width: 708px;
     height: 343px;
     border-radius: 10px;
     background: #181B3A;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .status2 {
@@ -497,12 +502,13 @@ header {
  */
 .users {
     width: 680px;
-    height: 220px;
+    height: 240px;
     flex-shrink: 0;
     color: #FFF;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 
 .namePhoto {
@@ -511,6 +517,14 @@ header {
     display: flex;
     gap: 15px;
     align-items: center;
+    justify-content: space-between;
+}
+
+.user-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .userInfo{
@@ -526,4 +540,11 @@ font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+}
+
+.RT-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }

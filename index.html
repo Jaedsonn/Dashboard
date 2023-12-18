@@ -1,216 +1,383 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/global.css">
-</head>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/global.css" />
+  </head>
 
-<body>
+  <body>
     <main>
-        <header>
-            <img id="logo" src="img/svg/Header images/Bank Logo 1.svg" alt="Logo Bank">
+      <header>
+        <img
+          id="logo"
+          src="img/svg/Header images/Bank Logo 1.svg"
+          alt="Logo Bank"
+        />
 
-            <div id="searchConteiner">
+        <div id="searchConteiner">
+          <input type="search" name="search" id="search" placeholder="Search" />
+          <img class="logoNav" src="img/svg/Header images/Lupa 2.svg" alt="" />
+        </div>
 
-                <input type="search" name="search" id="search" placeholder="Search">
-                <img class="logoNav" src="img/svg/Header images/Lupa 2.svg" alt="">
+        <div id="configCont">
+          <div id="icon7days">
+            <p>
+              <img
+                class="logoNav"
+                src="img/svg/Header images/calendário-icon.svg"
+                alt="Calendário"
+              />
+              7Days
+            </p>
+            <img
+              class="logoNav"
+              src="img/svg/Header images/set down.svg"
+              alt="seta para baixo"
+            />
+          </div>
+
+          <div id="modeLD">
+            <input type="button" value="" id="light" />
+            <div class="ellipse">
+              <input type="button" value="" id="dark" />
             </div>
+          </div>
 
-            <div id="configCont">
-                <div id="icon7days">
-                    <p>
-                        <img class="logoNav" src="img/svg/Header images/calendário-icon.svg" alt="Calendário">
-                        7Days
+          <div id="userNoti">
+            <div class="ellipse">
+              <img
+                class="logoNav"
+                src="img/svg/Header images/notifications.svg"
+                alt="notifi"
+              />
+            </div>
+            <div class="ellipse">
+              <img
+                class="logoNav"
+                src="img/svg/Header images/user.svg"
+                alt="usúario"
+              />
+            </div>
+          </div>
+        </div>
+      </header>
+      <section id="homePage">
+        <div id="sideBar">
+          <nav id="upIcons">
+            <ul>
+              <img
+                src="img/svg/sideBar images/Bar menu.svg"
+                alt=""
+                class="logNav"
+              />
+            </ul>
+            <ul>
+              <img
+                src="img/svg/sideBar images/Product.svg"
+                alt=""
+                class="logNav"
+              />
+            </ul>
+            <ul>
+              <img
+                src="img/svg/sideBar images/Payment.svg"
+                alt=""
+                class="logNav"
+              />
+            </ul>
+            <ul>
+              <img
+                src="img/svg/sideBar images/Message.svg"
+                alt=""
+                class="logNav"
+              />
+            </ul>
+            <ul>
+              <img
+                src="img/svg/sideBar images/comunidade.svg"
+                alt=""
+                class="logNav"
+              />
+            </ul>
+            <ul>
+              <img
+                src="img/svg/sideBar images/Statistics.svg"
+                alt=""
+                class="logNav"
+              />
+            </ul>
+          </nav>
+          <nav id="lowIcons">
+            <ul>
+              <img
+                src="img/svg/sideBar images/ajuda.svg"
+                alt=""
+                class="logNav"
+              />
+            </ul>
+            <ul>
+              <img
+                src="img/svg/sideBar images/config bar.svg"
+                alt=""
+                class="logNav"
+              />
+            </ul>
+            <ul>
+              <img
+                src="img/svg/sideBar images/sair.svg"
+                alt=""
+                class="logNav"
+              />
+            </ul>
+          </nav>
+        </div>
+        <div id="homeEstatics">
+          <div id="money">
+            <div class="din">
+              <div class="iconCont">
+                <div class="ellipse4">
+                  <img
+                    src="img/svg/homePage images/Payment.svg"
+                    alt=""
+                    class="pay"
+                  />
+                </div>
+                <img
+                  src="img/svg/homePage images/Layer 2.svg"
+                  alt=""
+                  class="options"
+                />
+              </div>
+              <p class="textCont">Total Balance</p>
+              <p class="dinCont">$4,156.45</p>
+            </div>
+            <div class="din">
+              <div class="iconCont">
+                <div class="ellipse4">
+                  <img
+                    src="img/svg/homePage images/mdi_dollar.svg"
+                    alt=""
+                    class="pay"
+                  />
+                </div>
+                <img
+                  src="img/svg/homePage images/options.svg"
+                  alt=""
+                  class="options"
+                />
+              </div>
+              <p class="textCont">Income</p>
+              <p class="dinCont">$3,146.45</p>
+            </div>
+            <div class="din">
+              <div class="iconCont">
+                <div class="ellipse4">
+                  <img
+                    src="img/svg/homePage images/ph_money-light.svg"
+                    alt=""
+                    class="pay"
+                  />
+                </div>
+                <img
+                  src="img/svg/homePage images/options.svg"
+                  alt=""
+                  class="options"
+                />
+              </div>
+              <p class="textCont">Expenses</p>
+              <p class="dinCont">$1,146.45</p>
+            </div>
+            <div class="din">
+              <div class="iconCont">
+                <div class="ellipse4">
+                  <img
+                    src="img/svg/homePage images/mdi_dollar.svg"
+                    alt=""
+                    class="pay"
+                  />
+                </div>
+                <img
+                  src="img/svg/homePage images/options.svg"
+                  alt=""
+                  class="options"
+                />
+              </div>
+              <p class="textCont">Sanvings</p>
+              <p class="dinCont">$2,146.45</p>
+            </div>
+          </div>
+          <div id="graphics">
+            <div class="estatics">
+              <p class="textGraph">All Expenses</p>
+              <div id="sub-estatics">
+                <div class="colorGraph">
+                  <div class="subGraph">
+                    <img
+                      src="img/svg/homePage images/circulo 4.svg"
+                      alt=""
+                      class="circle"
+                    />
+                    <img
+                      src="img/svg/homePage images/circulo 3.svg"
+                      alt=""
+                      class="circle"
+                    />
+                  </div>
+                  <p>100%</p>
+                  <div class="subGraph">
+                    <img
+                      src="img/svg/homePage images/Circulo 1.svg"
+                      alt=""
+                      class="circle"
+                    />
+                    <img
+                      src="img/svg/homePage images/circulo 2.svg"
+                      alt=""
+                      class="circle"
+                    />
+                  </div>
+                </div>
+                <div id="levelsGraph">
+                  <p>
+                    <img
+                      src="img/svg/homePage images/levels ellipse '.svg"
+                      alt=""
+                      class="levelsImg"
+                    />
+                    Investment
+                  </p>
+                  <p>
+                    <img
+                      src="img/svg/homePage images/levels ellipse 2.svg"
+                      alt=""
+                      class="levelsImg"
+                    />
+                    Food
+                  </p>
+                  <p>
+                    <img
+                      src="img/svg/homePage images/levels ellipse 3.svg"
+                      alt=""
+                      class="levelsImg"
+                    />
+                    Shopping
+                  </p>
+                  <p>
+                    <img
+                      src="img/svg/homePage images/levels ellipse 4.svg"
+                      alt=""
+                      class="levelsImg"
+                    />
+                    Others
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="estatics2">
+              <p class="textGraph">Earning Flow</p>
+              <div id="numGroup">
+                <p class="verticalNum">$4k</p>
+                <p class="verticalNum">$3k</p>
+                <p class="verticalNum">$2k</p>
+                <p class="verticalNum">$1k</p>
+                <p class="verticalNum">0</p>
+                <p class="verticalNum">01</p>
+              </div>
+
+              <div id="numGroup2">
+                <p class="horizontalNum">05</p>
+                <p class="horizontalNum">10</p>
+                <p class="horizontalNum">15</p>
+                <p class="horizontalNum">20</p>
+                <p class="horizontalNum">25</p>
+                <p class="horizontalNum">30</p>
+                <p class="horizontalNum">35</p>
+                <p class="horizontalNum">40</p>
+              </div>
+            </div>
+          </div>
+          <div id="informations">
+            <div class="status">
+              <p class="textGraph">Recent Transaction</p>
+              <div class="users">
+                <div class="namePhoto">
+                    <div class="user-cont">
+                        <img
+                          src="img/svg/homePage images/profile_images/Profile Image 1.svg"
+                          alt=""
+                        />
+                        <div class="userInfo">
+                          <p>Rumi Aktar</p>
+                          <p class="date">15Nov 2013</p>
+                        </div>
+                    </div>
+                    <p class="RT-text">
+                      <img src="img/svg/homePage images/RT-icon-1.svg" alt="" />
+                      10,000
+                      <img src="img/svg/homePage images/options.svg" alt="" />
                     </p>
-                    <img class="logoNav" src="img/svg/Header images/set down.svg" alt="seta para baixo">
                 </div>
-
-                <div id="modeLD">
-
-                    <input type="button" value="" id="light">
-                    <div class="ellipse">
-                        <input type="button" value="" id="dark">
+                <div class="namePhoto">
+                    <div class="user-cont">
+                        <img
+                          src="img/svg/homePage images/profile_images/Profile Image 2.svg"
+                          alt=""
+                        />
+                        <div class="userInfo">
+                          <p>Alamin Sarkar</p>
+                          <p class="date">10Oct 2013</p>
+                        </div>
                     </div>
-
+                    <p class="RT-text">
+                      <img src="img/svg/homePage images/RT-icon-1.svg" alt="" />
+                      10,000
+                      <img src="img/svg/homePage images/options.svg" alt="" />
+                    </p>
                 </div>
-
-                <div id="userNoti">
-                    <div class="ellipse">
-                        <img class="logoNav" src="img/svg/Header images/notifications.svg" alt="notifi">
+                <div class="namePhoto">
+                  <div class="user-cont">
+                    <img
+                      src="img/svg/homePage images/profile_images/Profile Image 3.svg"
+                      alt=""
+                    />
+                    <div class="userInfo">
+                      <p>Rasel Ahmed</p>
+                      <p class="date">21Sep 2013</p>
                     </div>
-                    <div class="ellipse">
-                        <img class="logoNav" src="img/svg/Header images/user.svg" alt="usúario">
-                    </div>
+                  </div>
+                  <p class="RT-text">
+                    <img src="img/svg/homePage images/RT-icon-1.svg" alt="" />
+                    10,000
+                    <img src="img/svg/homePage images/options.svg" alt="" />
+                  </p>
                 </div>
+                <div class="namePhoto">
+                    <div class="user-cont">
+
+                        <img
+                          src="img/svg/homePage images/profile_images/Profile Image 1.svg"
+                          alt=""
+                        />
+                        <div class="userInfo">
+                          <p>Rumi Aktar</p>
+                          <p class="date">15Nov 2013</p>
+                        </div>
+                    </div>
+                    <p class="RT-text">
+                      <img src="img/svg/homePage images/RT-icon-1.svg" alt="" />
+                      10,000
+                      <img src="img/svg/homePage images/options.svg" alt="" />
+                    </p>
+                </div>
+              </div>
             </div>
-        </header>
-        <section id="homePage">
-            <div id="sideBar">
-                <nav id="upIcons">
-                    <ul><img src="img/svg/sideBar images/Bar menu.svg" alt="" class="logNav"></ul>
-                    <ul><img src="img/svg/sideBar images/Product.svg" alt="" class="logNav"></ul>
-                    <ul><img src="img/svg/sideBar images/Payment.svg" alt="" class="logNav"></ul>
-                    <ul><img src="img/svg/sideBar images/Message.svg" alt="" class="logNav"></ul>
-                    <ul><img src="img/svg/sideBar images/comunidade.svg" alt="" class="logNav"></ul>
-                    <ul><img src="img/svg/sideBar images/Statistics.svg" alt="" class="logNav"></ul>
-                </nav>
-                <nav id="lowIcons">
-                    <ul><img src="img/svg/sideBar images/ajuda.svg" alt="" class="logNav"></ul>
-                    <ul><img src="img/svg/sideBar images/config bar.svg" alt="" class="logNav"></ul>
-                    <ul><img src="img/svg/sideBar images/sair.svg" alt="" class="logNav"></ul>
-                </nav>
-            </div>
-            <div id="homeEstatics">
-                <div id="money">
-                    <div class="din">
-                        <div class="iconCont">
-                            <div class="ellipse4">
-                                <img src="img/svg/homePage images/Payment.svg" alt="" class="pay">
-                            </div>
-                            <img src="img/svg/homePage images/Layer 2.svg" alt="" class="options">
-                        </div>
-                        <p class="textCont">Total Balance</p>
-                        <p class="dinCont">$4,156.45</p>
-                    </div>
-                    <div class="din">
-                        <div class="iconCont">
-                            <div class="ellipse4">
-                                <img src="img/svg/homePage images/mdi_dollar.svg" alt="" class="pay">
-                            </div>
-                            <img src="img/svg/homePage images/options.svg" alt="" class="options">
-                        </div>
-                        <p class="textCont">Income</p>
-                        <p class="dinCont">$3,146.45</p>
-                    </div>
-                    <div class="din">
-                        <div class="iconCont">
-                            <div class="ellipse4">
-                                <img src="img/svg/homePage images/ph_money-light.svg" alt="" class="pay">
-                            </div>
-                            <img src="img/svg/homePage images/options.svg" alt="" class="options">
-                        </div>
-                        <p class="textCont">Expenses</p>
-                        <p class="dinCont">$1,146.45</p>
-                    </div>
-                    <div class="din">
-                        <div class="iconCont">
-                            <div class="ellipse4">
-                                <img src="img/svg/homePage images/mdi_dollar.svg" alt="" class="pay">
-                            </div>
-                            <img src="img/svg/homePage images/options.svg" alt="" class="options">
-                        </div>
-                        <p class="textCont">Sanvings</p>
-                        <p class="dinCont">$2,146.45</p>
-                    </div>
-                </div>
-                <div id="graphics">
-                    <div class="estatics">
-                        <p class="textGraph">All Expenses</p>
-                        <div id="sub-estatics">
-                            <div class="colorGraph">
-                                <div class="subGraph">
-                                    <img src="img/svg/homePage images/circulo 4.svg" alt="" class="circle">
-                                    <img src="img/svg/homePage images/circulo 3.svg" alt="" class="circle">
-                                </div>
-                                <p>100%</p>
-                                <div class="subGraph">
-                                    <img src="img/svg/homePage images/Circulo 1.svg" alt="" class="circle">
-                                    <img src="img/svg/homePage images/circulo 2.svg" alt="" class="circle">
-                                </div>
-                            </div>
-                            <div id="levelsGraph">
-                                <p>
-                                    <img src="img/svg/homePage images/levels ellipse '.svg" alt="" class="levelsImg">
-                                    Investment
-                                </p>
-                                <p>
-                                    <img src="img/svg/homePage images/levels ellipse 2.svg" alt="" class="levelsImg">
-                                    Food
-                                </p>
-                                <p>
-                                    <img src="img/svg/homePage images/levels ellipse 3.svg" alt="" class="levelsImg">
-                                    Shopping
-                                </p>
-                                <p>
-                                    <img src="img/svg/homePage images/levels ellipse 4.svg" alt="" class="levelsImg">
-                                    Others
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="estatics2">
-                        <p class="textGraph">Earning Flow</p>
-                        <div id="numGroup">
-                            <p class="verticalNum">$4k</p>
-                            <p class="verticalNum">$3k</p>
-                            <p class="verticalNum">$2k</p>
-                            <p class="verticalNum">$1k</p>
-                            <p class="verticalNum">0</p>
-                            <p class="verticalNum">01</p>
-                        </div>
-
-                        <div id="numGroup2">
-                            <p class="horizontalNum">05</p>
-                            <p class="horizontalNum">10</p>
-                            <p class="horizontalNum">15</p>
-                            <p class="horizontalNum">20</p>
-                            <p class="horizontalNum">25</p>
-                            <p class="horizontalNum">30</p>
-                            <p class="horizontalNum">35</p>
-                            <p class="horizontalNum">40</p>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div id="informations">
-                    <div class="status">
-                        <p class="textGraph">Recent Transaction</p>
-                        <div class="users">
-                            <div class="namePhoto">
-                                <img src="img/svg/homePage images/profile_images/Profile Image 1.svg" alt="">
-                                <div class="userInfo">
-                                    <p>Rumi Aktar</p>
-                                    <p class="date">15Nov 2013</p>
-                                </div>
-                            </div>
-                            <p></p>
-                            <div class="namePhoto">
-                                <img src="img/svg/homePage images/profile_images/Profile Image 2.svg" alt="">
-                                <div class="userInfo">
-                                    <p>Alamin Sarkar</p>
-                                    <p class="date">10Oct 2013</p>
-                                </div>
-                            </div>
-                            <p></p>
-                            <div class="namePhoto">
-                                <img src="img/svg/homePage images/profile_images/Profile Image 3.svg" alt="">
-                                <div class="userInfo">
-                                    <p>Rasel Ahmed</p>
-                                    <p class="date">21Sep 2013</p>
-                                </div>
-                            </div>
-                            <p></p>
-                            <div class="namePhoto">
-                                <img src="img/svg/homePage images/profile_images/Profile Image 1.svg" alt="">
-                                <div class="userInfo">
-                                    <p>Rumi Aktar</p>
-                                    <p class="date">15Nov 2013</p>
-                                </div>
-                            </div>
-                            <p></p>
-                        </div>
-
-                    </div>
-                    <div class="status2"></div>
-                </div>
-            </div>
-        </section>
+            <div class="status2"></div>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
-
+  </body>
 </html>
