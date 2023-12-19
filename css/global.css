@@ -308,10 +308,15 @@ header {
 
 .status2 {
 
-    width: 464px;
-    height: 343px;
+    width: 404px;
+    height: 303px;
+    padding: 20px 30px;
     border-radius: 10px;
     background: #181B3A;
+    display: flex;
+    flex-direction: column;
+    justify-content: centery;
+    
 }
 
 /*estilização dos conteiners de content*/
@@ -548,4 +553,33 @@ line-height: normal;
     justify-content: center;
     align-items: center;
     gap: 5px;
+    font-size: 14px;
+    
+}
+.textCont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textCont > span{
+color: #AEAFBB;
+display: flex;
+align-items: center;
+gap: 5px;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.textCont > #active{
+    color: #01D492;
+}
+
+.subCard-information{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
