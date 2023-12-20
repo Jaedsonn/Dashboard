@@ -281,8 +281,8 @@ header {
     background: #181B3A;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
 }
 
 #informations {
