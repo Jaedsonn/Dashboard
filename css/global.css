@@ -12,6 +12,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #090D28;
+    overflow-x: hidden;
 }
 
 main {
