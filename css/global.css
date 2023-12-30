@@ -139,7 +139,7 @@ header {
 }
 
 #light {
-    background-image:url("/img/svg/Header\ images/lightMode.svg")
+    background-image:url("/Dashboard/img/svg/Header\ images/lightMode.svg")
 }
 
 .ellipse {
@@ -154,7 +154,7 @@ header {
 }
 
 #dark {
-    background-image: url("/img/svg/Header\ images/darkMode.svg");
+    background-image: url("/Dashboard/img/svg/Header\ images/darkMode.svg");
     background-size: contain;
     background-position: center;
 }
