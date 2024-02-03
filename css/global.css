@@ -6,6 +6,7 @@
 }
 
 body {
+    box-sizing: border-box;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -13,10 +14,11 @@ body {
     justify-content: center;
     background-color: #090D28;
     overflow-x: hidden;
+    padding: 0 20px;
 }
 
 main {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,14 +28,15 @@ main {
 
 
 header {
-    width: 1400px;
+    box-sizing: border-box;
+    width: 100%;
     height: 80px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background-color: aqua;
     background-color: #090D28;
-
+    flex-shrink: 1;
+    gap: 11.5rem;    
 }
 
 
@@ -78,10 +81,10 @@ header {
 #configCont {
     width: 33%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     background-color: transparent;
-    gap: 42px;
+    
 }
 
 #icon7days {
@@ -139,7 +142,7 @@ header {
 }
 
 #light {
-    background-image:url("https://cdn-user-icons.flaticon.com/82473/82473819/1703969576164.svg?token=exp=1703970472~hmac=33cba0208df2cb5a0c59c64f19b4ed36 ");
+    background-image: url("https://cdn-user-icons.flaticon.com/82473/82473819/1703969576164.svg?token=exp=1703970472~hmac=33cba0208df2cb5a0c59c64f19b4ed36 ");
     background-size: contain;
 }
 
@@ -185,17 +188,15 @@ header {
 
 #homePage {
     display: flex;
-    width: 1500px;
-    height: 1024px;
+    width: 100%;
     margin-top: 20px;
-    align-items: flex-start;
-    justify-content: flex-end;
+    justify-content: center;
+    gap: 30px;
 }
 
 #sideBar {
-    width: 80px;
+    min-width: 80px;
     height: 875px;
-    margin-left: 50px;
     flex-shrink: 0;
     border-radius: 10px;
     background: #181B3A;
@@ -226,19 +227,19 @@ header {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    width: 1440px;
     align-items: center;
+    flex-shrink: 1;
+    flex-wrap: wrap;
 }
 
 #money {
     display: flex;
-    width: 1228px;
-    height: 176px;
-    justify-content: center;
-    /*  align-items: flex-start;  config do figma*/
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
     align-items: center;
-    gap: 48px;
     flex-shrink: 0;
+    flex-wrap: wrap;
 }
 
 .din {
@@ -252,12 +253,13 @@ header {
 
 #graphics {
     display: flex;
-    width: 1228px;
-    height: 305px;
+    width: auto;
+    height: fit-content;
     justify-content: center;
     align-items: flex-start;
     gap: 38px;
-    flex-shrink: 0;
+    flex-shrink: 1;
+    flex-wrap: wrap;
 
 }
 
@@ -318,7 +320,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: centery;
-    
+
 }
 
 /*estilização dos conteiners de content*/
@@ -397,6 +399,7 @@ header {
 
 
 }
+
 .textGraphColor {
     color: #FFF;
     font-size: 24px;
@@ -406,8 +409,8 @@ header {
     width: 435px;
     height: 55px;
     text-align: start;
-display: flex;
-align-items: flex-end;
+    display: flex;
+    align-items: flex-end;
 
 }
 
@@ -461,11 +464,11 @@ align-items: flex-end;
 
 #numGroup {
     width: 23px;
-        height: 215px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
+    height: 215px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 
 .verticalNum {
@@ -483,7 +486,7 @@ align-items: flex-end;
     height: 15px;
     display: flex;
     gap: 65px;
-    align-items:start;
+    align-items: start;
     justify-content: flex-end;
 }
 
@@ -493,16 +496,16 @@ align-items: flex-end;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-  }
+}
 
-  #vertical > p {
+#vertical>p {
     text-wrap: nowrap;
     display: flex;
     height: 40px;
     align-items: end;
-  }
+}
 
-  #horizontal {
+#horizontal {
     padding: 10px;
     width: 95%;
     height: 72%;
@@ -511,7 +514,7 @@ align-items: flex-end;
     justify-content: space-between;
     align-items: center;
     margin: 0;
-  }
+}
 
 .horizontalNum {
     color: #AEAFBB;
@@ -529,23 +532,24 @@ align-items: flex-end;
     height: 25px;
     display: flex;
     justify-content: flex-start;
-  }
+}
 
-  #groupVector1 {
+#groupVector1 {
     width: 619.002px;
     height: 130px;
     display: flex;
     justify-content: flex-start;
-  }
-  .linha {
-    position: absolute;
-    width: 619px;
-  }
+}
 
-  .cor {
+.linha {
     position: absolute;
     width: 619px;
-  }
+}
+
+.cor {
+    position: absolute;
+    width: 619px;
+}
 
 
 /* .teste {
@@ -576,60 +580,67 @@ align-items: flex-end;
     justify-content: space-between;
 }
 
-.user-cont{
+.user-cont {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
 
-.userInfo{
+.userInfo {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-   height: 40px;
+    height: 40px;
 }
 
-.date{
-color: #606060;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+.date {
+    color: #606060;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
-.RT-text{
+.RT-text {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
     font-size: 14px;
-    
+
 }
-.textCont{
+
+.textCont {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.textCont > span{
-color: #AEAFBB;
-display: flex;
-align-items: center;
-gap: 5px;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+.textCont>span {
+    color: #AEAFBB;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
-.textCont > #active{
+.textCont>#active {
     color: #01D492;
 }
 
-.subCard-information{
+.subCard-information {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+@media screen and (max-width:1390px) {
+    #money {
+        flex-wrap: wrap;
+    }
 }
